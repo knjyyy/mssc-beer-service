@@ -1,10 +1,13 @@
 package com.spring.msscbeerservice.web.controller;
 
 import com.spring.msscbeerservice.web.model.BeerDto;
+import com.spring.msscbeerservice.web.model.BeerStyleEnum;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @RestController
@@ -14,7 +17,13 @@ public class BeerController {
     @GetMapping("/{beerId}")
     public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId) {
         // TODO impl
-         return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
+         return new ResponseEntity<>(BeerDto.builder()
+                 .id(beerId)
+                 .beerName("San Miguel Beer Pale Pilsen")
+                 .beerStyle(BeerStyleEnum.PILSNER)
+                 .price(new BigDecimal(1.00))
+                 .createdDate(OffsetDateTime.now())
+                 .build(), HttpStatus.OK);
     }
 
     @PostMapping
