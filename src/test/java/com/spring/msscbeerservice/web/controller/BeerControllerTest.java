@@ -2,12 +2,14 @@ package com.spring.msscbeerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.msscbeerservice.web.model.BeerDto;
+import com.spring.msscbeerservice.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
@@ -32,7 +34,7 @@ class BeerControllerTest {
 
     @Test
     void saveBeer() throws Exception {
-        BeerDto beerDto = BeerDto.builder().build();
+        BeerDto beerDto = getBeerDtoData();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
         mockMvc.perform(post("/api/v1/beer")
                         .contentType(MediaType.APPLICATION_JSON)
@@ -42,12 +44,21 @@ class BeerControllerTest {
 
     @Test
     void updateBeerById() throws Exception {
-        BeerDto beerDto = BeerDto.builder().build();
+        BeerDto beerDto = getBeerDtoData();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 
         mockMvc.perform(put("/api/v1/beer/" + UUID.randomUUID())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(beerDtoJson))
                 .andExpect(status().isNoContent());
+    }
+
+    BeerDto getBeerDtoData() {
+        return BeerDto.builder()
+                .beerName("Galaxy Cat")
+                .beerStyle(BeerStyleEnum.PILSNER)
+                .upc(5231234L)
+                .price(new BigDecimal("11.95"))
+                .build();
     }
 }
