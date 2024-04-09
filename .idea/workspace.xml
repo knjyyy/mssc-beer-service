@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Adding error handler. Closes #9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/DateMapper.java" afterDir="false" />
+    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Add badge for CircleCI builds">
+      <change afterPath="$PROJECT_DIR$/src/main/asciidoc/index.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/springframework/restdocs/templates/request-fields.snippet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +53,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workspace/projects/Spring Microservice/mssc-brewery&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/workspace/projects/Spring Microservice/mssc-brewery",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.spring.msscbeerservice.web.model" />
@@ -70,7 +77,7 @@
       <recent name="com.spring.msscbeerservice.web.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsscBeerServiceApplication">
+  <component name="RunManager" selected="JUnit.BeerControllerTest">
     <configuration name="MsscBeerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.MsscBeerServiceApplication" />
       <module name="mssc-beer-service" />
@@ -84,25 +91,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsscBeerServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc-beer-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.msscbeerservice.*" />
+          <option name="PATTERN" value="com.spring.msscbeerservice.web.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.MsscBeerServiceApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.web.controller.BeerControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest.getBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-beer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.msscbeerservice.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.web.controller.BeerControllerTest" />
+      <option name="METHOD_NAME" value="getBeerById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest.saveBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-beer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.msscbeerservice.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.web.controller.BeerControllerTest" />
+      <option name="METHOD_NAME" value="saveBeer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeerControllerTest.updateBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-beer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.msscbeerservice.web.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.web.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.web.controller.BeerControllerTest" />
+      <option name="METHOD_NAME" value="updateBeerById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerControllerTest" />
+        <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
+        <item itemvalue="JUnit.BeerControllerTest.saveBeer" />
+        <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
         <item itemvalue="Application.MsscBeerServiceApplication" />
-        <item itemvalue="JUnit.MsscBeerServiceApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -187,10 +245,71 @@
       <option name="project" value="LOCAL" />
       <updated>1711987300772</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding MapStruct and BeerMapper. Closes #10">
+      <option name="closed" value="true" />
+      <created>1712069375773</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712069375773</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix failing tests. Closes #11">
+      <option name="closed" value="true" />
+      <created>1712070071408</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712070071408</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add badge for CircleCI builds">
+      <option name="closed" value="true" />
+      <created>1712073013466</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712073013466</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="15b60a5f-70bc-4ed2-bbaf-3695ad21c365" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="15b60a5f-70bc-4ed2-bbaf-3695ad21c365">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial project add. Closes #1" />
     <MESSAGE value="Adding web data model. Closes #2" />
     <MESSAGE value="Adding Beer Controller. Closes #3" />
@@ -200,6 +319,9 @@
     <MESSAGE value="Adding Beer bootstrap. Closes #7" />
     <MESSAGE value="Adding validation. Closes #8" />
     <MESSAGE value="Adding error handler. Closes #9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding error handler. Closes #9" />
+    <MESSAGE value="Adding MapStruct and BeerMapper. Closes #10" />
+    <MESSAGE value="Fix failing tests. Closes #11" />
+    <MESSAGE value="Add badge for CircleCI builds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add badge for CircleCI builds" />
   </component>
 </project>
