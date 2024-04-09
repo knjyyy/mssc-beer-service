@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Add badge for CircleCI builds">
+    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Added service layer and updated controller methods, closes #16">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerPagedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerPagedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +63,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.spring.msscbeerservice.services" />
       <recent name="com.spring.msscbeerservice.web.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -261,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712073013466</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added jsoncreator example, closes #15">
+      <option name="closed" value="true" />
+      <created>1712662311463</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712662311463</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +326,8 @@
     <MESSAGE value="Adding MapStruct and BeerMapper. Closes #10" />
     <MESSAGE value="Fix failing tests. Closes #11" />
     <MESSAGE value="Add badge for CircleCI builds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add badge for CircleCI builds" />
+    <MESSAGE value="Added jsoncreator example, closes #15" />
+    <MESSAGE value="Added service layer and updated controller methods, closes #16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added service layer and updated controller methods, closes #16" />
   </component>
 </project>
