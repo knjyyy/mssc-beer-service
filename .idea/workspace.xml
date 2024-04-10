@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Added service layer and updated controller methods, closes #16">
+    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Added Beer List API, with Inventory info. Closes #18">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/BeerInventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/model/BeerInventoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapperDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/bootstrap/BeerLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/bootstrap/BeerLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/domain/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/domain/Beer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/repositories/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/repositories/BeerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/MvcExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/MvcExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerPagedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerPagedList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -67,6 +78,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.spring.msscbeerservice.services.inventory" />
       <recent name="com.spring.msscbeerservice.services" />
       <recent name="com.spring.msscbeerservice.web.model" />
     </key>
@@ -74,10 +86,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.spring.msscbeerservice.services.inventory" />
       <recent name="com.spring.msscbeerservice.web.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerControllerTest">
+  <component name="RunManager" selected="Application.MsscBeerServiceApplication">
     <configuration name="MsscBeerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.MsscBeerServiceApplication" />
       <module name="mssc-beer-service" />
@@ -122,33 +135,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeerControllerTest.saveBeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerInventoryServiceRestTemplateImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc-beer-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.msscbeerservice.web.controller.*" />
+          <option name="PATTERN" value="com.spring.msscbeerservice.services.inventory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.web.controller.BeerControllerTest" />
-      <option name="METHOD_NAME" value="saveBeer" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.services.inventory" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.services.inventory.BeerInventoryServiceRestTemplateImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeerControllerTest.updateBeerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeerInventoryServiceRestTemplateImplTest.getOnhandInventory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc-beer-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.msscbeerservice.web.controller.*" />
+          <option name="PATTERN" value="com.spring.msscbeerservice.services.inventory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.web.controller.BeerControllerTest" />
-      <option name="METHOD_NAME" value="updateBeerById" />
+      <option name="PACKAGE_NAME" value="com.spring.msscbeerservice.services.inventory" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.services.inventory.BeerInventoryServiceRestTemplateImplTest" />
+      <option name="METHOD_NAME" value="getOnhandInventory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MsscBeerServiceApplication" />
+        <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest" />
+        <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest.getOnhandInventory" />
         <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
-        <item itemvalue="JUnit.BeerControllerTest.saveBeer" />
-        <item itemvalue="JUnit.BeerControllerTest.updateBeerById" />
-        <item itemvalue="Application.MsscBeerServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +300,17 @@
     <option name="localTasksCounter" value="15" />
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="OPEN_GENERIC_TABS">
       <map>
@@ -340,6 +363,23 @@
     <MESSAGE value="Add badge for CircleCI builds" />
     <MESSAGE value="Added jsoncreator example, closes #15" />
     <MESSAGE value="Added service layer and updated controller methods, closes #16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added service layer and updated controller methods, closes #16" />
+    <MESSAGE value="Added Beer List API, with Inventory info. Closes #18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Beer List API, with Inventory info. Closes #18" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
