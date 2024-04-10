@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Added showInventoryOnHand param in Get Beer List and Get Beer By Id. Closes #19">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/config/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ehcache.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapperDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapperDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712756279316</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added showInventoryOnHand param in Get Beer List and Get Beer By Id. Closes #19">
+      <option name="closed" value="true" />
+      <created>1712759480945</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712759480945</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -370,21 +381,5 @@
     <MESSAGE value="Added Beer List API, with Inventory info. Closes #18" />
     <MESSAGE value="Added showInventoryOnHand param in Get Beer List and Get Beer By Id. Closes #19" />
     <option name="LAST_COMMIT_MESSAGE" value="Added showInventoryOnHand param in Get Beer List and Get Beer By Id. Closes #19" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
