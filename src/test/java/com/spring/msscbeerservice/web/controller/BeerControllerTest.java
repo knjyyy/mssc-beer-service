@@ -53,7 +53,7 @@ class BeerControllerTest {
 
     @Test
     void getBeerById() throws Exception {
-        given(beerService.getById(any())).willReturn(getBeerDtoData());
+        given(beerService.getById(any(), any())).willReturn(getBeerDtoData());
 
         mockMvc.perform(get("/api/v1/beer/{beerId}", UUID.randomUUID())
                 .param("isCold", "yes")
