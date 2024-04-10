@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Added Beer List API, with Inventory info. Closes #18">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/BeerInventoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/model/BeerInventoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapperDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/domain/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/domain/Beer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/repositories/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/repositories/BeerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/MvcExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/controller/MvcExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/model/BeerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapperDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/web/mappers/BeerMapperDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" afterDir="false" />
     </list>
@@ -90,7 +75,7 @@
       <recent name="com.spring.msscbeerservice.web.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsscBeerServiceApplication">
+  <component name="RunManager" selected="JUnit.BeerControllerTest">
     <configuration name="MsscBeerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.MsscBeerServiceApplication" />
       <module name="mssc-beer-service" />
@@ -168,10 +153,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="Application.MsscBeerServiceApplication" />
         <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest" />
         <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest.getOnhandInventory" />
-        <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
       </list>
     </recent_temporary>
@@ -297,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712671796889</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added Beer List API, with Inventory info. Closes #18">
+      <option name="closed" value="true" />
+      <created>1712754052906</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712754052906</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -365,21 +358,5 @@
     <MESSAGE value="Added service layer and updated controller methods, closes #16" />
     <MESSAGE value="Added Beer List API, with Inventory info. Closes #18" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Beer List API, with Inventory info. Closes #18" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/spring/msscbeerservice/services/BeerServiceImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
