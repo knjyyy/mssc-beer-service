@@ -3,6 +3,7 @@ package com.spring.msscbeerservice.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.msscbeerservice.bootstrap.BeerLoader;
 import com.spring.msscbeerservice.services.BeerService;
+import com.spring.msscbeerservice.services.inventory.BeerInventoryService;
 import com.spring.msscbeerservice.web.model.BeerDto;
 import com.spring.msscbeerservice.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
@@ -50,6 +51,9 @@ class BeerControllerTest {
 
     @MockBean
     BeerService beerService;
+
+    @MockBean
+    BeerInventoryService beerInventoryService;
 
     @Test
     void getBeerById() throws Exception {
