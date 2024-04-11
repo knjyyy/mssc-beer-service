@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Added API for Get Beer By UPC. Closes #21">
+    <list default="true" id="24b55742-c22c-4d0d-82c9-3f6d4987dd8d" name="Changes" comment="Fix for failing tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/web/controller/BeerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/msscbeerservice/services/inventory/BeerInventoryServiceRestTemplateImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/controller/BeerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto$BeerDtoBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/msscbeerservice/web/model/BeerDto.class" afterDir="false" />
@@ -75,7 +75,7 @@
       <recent name="com.spring.msscbeerservice.web.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsscBeerServiceApplication">
+  <component name="RunManager" selected="JUnit.BeerInventoryServiceRestTemplateImplTest">
     <configuration name="MsscBeerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.msscbeerservice.MsscBeerServiceApplication" />
       <module name="mssc-beer-service" />
@@ -153,10 +153,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest" />
         <item itemvalue="Application.MsscBeerServiceApplication" />
         <item itemvalue="JUnit.BeerControllerTest" />
         <item itemvalue="JUnit.BeerControllerTest.getBeerById" />
-        <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest" />
         <item itemvalue="JUnit.BeerInventoryServiceRestTemplateImplTest.getOnhandInventory" />
       </list>
     </recent_temporary>
@@ -306,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712759480945</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix for failing tests">
+      <option name="closed" value="true" />
+      <created>1712845310482</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712845310482</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -374,6 +382,7 @@
     <MESSAGE value="Added service layer and updated controller methods, closes #16" />
     <MESSAGE value="Added Beer List API, with Inventory info. Closes #18" />
     <MESSAGE value="Added showInventoryOnHand param in Get Beer List and Get Beer By Id. Closes #19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added showInventoryOnHand param in Get Beer List and Get Beer By Id. Closes #19" />
+    <MESSAGE value="Fix for failing tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix for failing tests" />
   </component>
 </project>
