@@ -2,10 +2,8 @@ package com.spring.msscbeerservice.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.annotations.*;
+import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -19,7 +17,7 @@ import java.util.UUID;
 @Entity
 public class Beer {
     @Id
-    @Type(type="org.hibernate.type.UUIDCharType")
+    @JdbcTypeCode(SqlTypes.UUID)
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false)
