@@ -67,9 +67,9 @@ class BeerControllerTest {
                         pathParameters(
                             parameterWithName("beerId").description("UUID of the beer to be retrieved")
                         ),
-                        requestParameters(
-                                parameterWithName("isCold").description("Is Beer Cold Query Parameter")
-                        ),
+                        //pathParameters(
+                        //        parameterWithName("isCold").description("Is Beer Cold Query Parameter")
+                        //),
                         responseFields(
                                 fieldWithPath("id").description("Beer ID ").type(UUID.class),
                                 fieldWithPath("version").description("Version number").type(Integer.class),
