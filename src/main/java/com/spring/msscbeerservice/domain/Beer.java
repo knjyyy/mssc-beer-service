@@ -7,6 +7,7 @@ import org.hibernate.type.SqlTypes;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import java.sql.Types;
 import java.util.UUID;
 
 @Getter
@@ -17,7 +18,7 @@ import java.util.UUID;
 @Entity
 public class Beer {
     @Id
-    @JdbcTypeCode(SqlTypes.UUID)
+    @JdbcTypeCode(Types.VARCHAR)
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false)
