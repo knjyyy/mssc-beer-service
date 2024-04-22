@@ -1,4 +1,4 @@
-package com.spring.msscbeerservice.events;
+package com.spring.msscbeerservice.events.common;
 
 import com.spring.msscbeerservice.web.model.BeerDto;
 import lombok.*;
