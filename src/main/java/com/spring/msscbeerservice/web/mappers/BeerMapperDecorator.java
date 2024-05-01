@@ -2,7 +2,7 @@ package com.spring.msscbeerservice.web.mappers;
 
 import com.spring.msscbeerservice.domain.Beer;
 import com.spring.msscbeerservice.services.inventory.BeerInventoryService;
-import com.spring.msscbeerservice.web.model.BeerDto;
+import com.spring.brewery.model.BeerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

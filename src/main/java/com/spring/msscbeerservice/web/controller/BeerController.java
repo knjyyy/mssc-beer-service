@@ -1,9 +1,9 @@
 package com.spring.msscbeerservice.web.controller;
 
 import com.spring.msscbeerservice.services.BeerService;
-import com.spring.msscbeerservice.web.model.BeerDto;
-import com.spring.msscbeerservice.web.model.BeerPagedList;
-import com.spring.msscbeerservice.web.model.BeerStyleEnum;
+import com.spring.brewery.model.BeerDto;
+import com.spring.brewery.model.BeerPagedList;
+import com.spring.brewery.model.BeerStyleEnum;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;

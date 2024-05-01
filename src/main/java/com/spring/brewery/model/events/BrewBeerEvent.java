@@ -1,6 +1,6 @@
-package com.spring.msscbeerservice.events.common;
+package com.spring.brewery.model.events;
 
-import com.spring.msscbeerservice.web.model.BeerDto;
+import com.spring.brewery.model.BeerDto;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
